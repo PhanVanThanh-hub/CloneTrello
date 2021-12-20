@@ -3,6 +3,8 @@ import Paper from '@mui/material/Paper';
 import CssBaseline from '@mui/material/CssBaseline';
 import { makeStyles } from '@mui/styles';
 import Title from './Title';
+import CardUI from '../../../components/card/CardUI';
+import InputContainer from '../../../components/input/InputUI';
 const useStyle=makeStyles((theme)=>({
    root:{
       width:"300px",
@@ -20,6 +22,10 @@ export default function List(){
          <Paper className ={classes.root}>
             <CssBaseline/>
             <Title/>
+            <CardUI/>
+            <CardUI/>
+            <CardUI/>
+            <InputContainer/>
          </Paper>
 
       </div>

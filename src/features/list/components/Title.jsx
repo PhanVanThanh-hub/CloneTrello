@@ -10,14 +10,21 @@ const useStyle=makeStyles((theme)=>({
    editableTitleContainer:{
       marginLeft:theme.spacing(1),
       display:"flex",
+      '& $editableTitle':{
+         fontSize:"20px",
+         fontWeight:"600",
+      }
    },
    editableTitle:{
-      flexGrow:"1"
+      flexGrow:"1",
+       
    },
    input:{
        
       '& .MuiInputBase-input':{
          margin:theme.spacing(1),
+         fontSize:"20px",
+         fontWeight:"600",
          "&:focus":{
             background:"#ddd"
          },
@@ -33,8 +40,8 @@ export default function Title(){
          {open ?(
             <div>
                <InputBase value="Todo"
-                   className= {classes.input}
-                 
+                  className= {classes.input}
+                  autoFocus
                   onBlur={()=>setOpen(!open)}
                />
             </div>
